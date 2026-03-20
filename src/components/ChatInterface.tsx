@@ -4,7 +4,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card } from '@/components/ui/card';
 import { Send, Brain, User, Scissors, Trash2, ThumbsUp, ThumbsDown, AlertTriangle } from 'lucide-react';
 import { SelfLearningLLM } from '@/lib/neural/SelfLearningLLM';
-import { useChat } from '@/context/ChatContext';
+import { useChat } from '@/context/ChatContext.tsx';
 import type { ChatMessage } from '@/types/chat';
 import { FeedbackLogger } from '@/lib/feedback/FeedbackLogger';
 import type { FeedbackKind } from '@/types/feedback';
