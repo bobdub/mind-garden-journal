@@ -253,9 +253,7 @@ export const ChatInterface = ({ llm }: ChatInterfaceProps) => {
                     </div>
                     {(rating || issueReported) && (
                       <span className="text-[11px] text-muted-foreground">
-                        {rating && !issueReported && 'Thanks for the feedback!'}
-                        {rating && issueReported && 'Thanks for the feedback—issue noted.'}
-                        {!rating && issueReported && 'Issue reported. We appreciate the heads-up.'}
+                        Signal logged · peer:local
                       </span>
                     )}
                   </div>
