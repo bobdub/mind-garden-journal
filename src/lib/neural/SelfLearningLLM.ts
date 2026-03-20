@@ -156,7 +156,7 @@ export class SelfLearningLLM {
   }
 
   getMemories(): TrainingEntry[] {
-    return this.memory.recall('training_data') || [];
+    return (this.memory.recall('training_data') as TrainingEntry[] | null) || [];
   }
 
   clearMemory(): void {
