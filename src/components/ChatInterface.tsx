@@ -226,7 +226,7 @@ export const ChatInterface = ({ llm }: ChatInterfaceProps) => {
                         disabled={isPending}
                       >
                         <ThumbsUp className="w-3.5 h-3.5 mr-1" />
-                        Helpful
+                        Reinforce
                       </Button>
                       <Button
                         type="button"
@@ -237,7 +237,7 @@ export const ChatInterface = ({ llm }: ChatInterfaceProps) => {
                         disabled={isPending}
                       >
                         <ThumbsDown className="w-3.5 h-3.5 mr-1" />
-                        Needs work
+                        Correct
                       </Button>
                       <Button
                         type="button"
@@ -248,14 +248,12 @@ export const ChatInterface = ({ llm }: ChatInterfaceProps) => {
                         disabled={isPending}
                       >
                         <AlertTriangle className="w-3.5 h-3.5 mr-1" />
-                        Report issue
+                        Flag
                       </Button>
                     </div>
                     {(rating || issueReported) && (
                       <span className="text-[11px] text-muted-foreground">
-                        {rating && !issueReported && 'Thanks for the feedback!'}
-                        {rating && issueReported && 'Thanks for the feedback—issue noted.'}
-                        {!rating && issueReported && 'Issue reported. We appreciate the heads-up.'}
+                        Signal logged · peer:local
                       </span>
                     )}
                   </div>
