@@ -237,7 +237,7 @@ export const ChatInterface = ({ llm }: ChatInterfaceProps) => {
                         disabled={isPending}
                       >
                         <ThumbsDown className="w-3.5 h-3.5 mr-1" />
-                        Needs work
+                        Correct
                       </Button>
                       <Button
                         type="button"
