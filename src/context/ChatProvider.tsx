@@ -1,6 +1,6 @@
 import { ReactNode, useCallback, useMemo, useReducer } from 'react';
 
-import { ChatContext, chatReducer, INITIAL_STATE, type ChatContextValue } from '@/context/ChatContext';
+import { ChatContext, chatReducer, INITIAL_STATE, type ChatContextValue } from '@/context/ChatContext.tsx';
 import type { ChatMessage } from '@/types/chat';
 
 interface ChatProviderProps {
