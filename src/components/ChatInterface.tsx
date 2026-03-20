@@ -248,7 +248,7 @@ export const ChatInterface = ({ llm }: ChatInterfaceProps) => {
                         disabled={isPending}
                       >
                         <AlertTriangle className="w-3.5 h-3.5 mr-1" />
-                        Report issue
+                        Flag
                       </Button>
                     </div>
                     {(rating || issueReported) && (
